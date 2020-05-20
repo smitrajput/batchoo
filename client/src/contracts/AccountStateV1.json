@@ -1,0 +1,420 @@
+{
+  "contractName": "AccountStateV1",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authKeys",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastInitializedVersion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "numAuthKeys",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"authKeys\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"lastInitializedVersion\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numAuthKeys\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"This contract holds the state variables used by the account contracts.This abstraction exists in order to retain the order of the state variables.\",\"methods\":{},\"title\":\"AccountStateV1\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol\":\"AccountStateV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol\":{\"keccak256\":\"0xcfb4767ffef498abc93d41400207c2ffcaec8c6aee6098da9cd4efa0386911c4\",\"urls\":[\"bzz-raw://74aa89ee35c7fad5569ce484c309e53fec22f3fb3bffb0365332d597ef043b57\",\"dweb:/ipfs/QmYMNQtds3mhuSX4erkSHasz8dDtP8PtrS1P7wBQbU8on7\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061016e806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80635175ca5e146100515780637e7fd66c146100ad578063affed0e0146100cb578063ec5e319e146100e9575b600080fd5b6100936004803603602081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610107565b604051808215151515815260200191505060405180910390f35b6100b5610127565b6040518082815260200191505060405180910390f35b6100d361012d565b6040518082815260200191505060405180910390f35b6100f1610133565b6040518082815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fea265627a7a723158208b49d6ab026f48a34a2b51b52730ad072f36b1eed1b5503e14a6695efb27e81864736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80635175ca5e146100515780637e7fd66c146100ad578063affed0e0146100cb578063ec5e319e146100e9575b600080fd5b6100936004803603602081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610107565b604051808215151515815260200191505060405180910390f35b6100b5610127565b6040518082815260200191505060405180910390f35b6100d361012d565b6040518082815260200191505060405180910390f35b6100f1610133565b6040518082815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fea265627a7a723158208b49d6ab026f48a34a2b51b52730ad072f36b1eed1b5503e14a6695efb27e81864736f6c63430005100032",
+  "sourceMap": "255:174:14:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;255:174:14;;;;;;;",
+  "deployedSourceMap": "255:174:14:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;255:174:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;328:40;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;328:40:14;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;285:37;;;:::i;:::-;;;;;;;;;;;;;;;;;;;374:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;400:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;328:40;;;;;;;;;;;;;;;;;;;;;;:::o;285:37::-;;;;:::o;374:20::-;;;;:::o;400:26::-;;;;:::o",
+  "source": "pragma solidity 0.5.16;\n\n/**\n * @title AccountStateV1\n * @author Authereum Labs, Inc.\n * @dev This contract holds the state variables used by the account contracts.\n * @dev This abstraction exists in order to retain the order of the state variables.\n */\n\ncontract AccountStateV1 {\n    uint256 public lastInitializedVersion;\n    mapping(address => bool) public authKeys;\n    uint256 public nonce;\n    uint256 public numAuthKeys;\n}",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol",
+    "exportedSymbols": {
+      "AccountStateV1": [
+        1502
+      ]
+    },
+    "id": 1503,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1491,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title AccountStateV1\n@author Authereum Labs, Inc.\n@dev This contract holds the state variables used by the account contracts.\n@dev This abstraction exists in order to retain the order of the state variables.",
+        "fullyImplemented": true,
+        "id": 1502,
+        "linearizedBaseContracts": [
+          1502
+        ],
+        "name": "AccountStateV1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1493,
+            "name": "lastInitializedVersion",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "285:37:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1492,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "285:7:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1497,
+            "name": "authKeys",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "328:40:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 1496,
+              "keyType": {
+                "id": 1494,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "336:7:14",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "328:24:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 1495,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "347:4:14",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1499,
+            "name": "nonce",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "374:20:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1498,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "374:7:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1501,
+            "name": "numAuthKeys",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "400:26:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1500,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "400:7:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1503,
+        "src": "255:174:14"
+      }
+    ],
+    "src": "0:429:14"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol",
+    "exportedSymbols": {
+      "AccountStateV1": [
+        1502
+      ]
+    },
+    "id": 1503,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1491,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title AccountStateV1\n@author Authereum Labs, Inc.\n@dev This contract holds the state variables used by the account contracts.\n@dev This abstraction exists in order to retain the order of the state variables.",
+        "fullyImplemented": true,
+        "id": 1502,
+        "linearizedBaseContracts": [
+          1502
+        ],
+        "name": "AccountStateV1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1493,
+            "name": "lastInitializedVersion",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "285:37:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1492,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "285:7:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1497,
+            "name": "authKeys",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "328:40:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+              "typeString": "mapping(address => bool)"
+            },
+            "typeName": {
+              "id": 1496,
+              "keyType": {
+                "id": 1494,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "336:7:14",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "328:24:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                "typeString": "mapping(address => bool)"
+              },
+              "valueType": {
+                "id": 1495,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "347:4:14",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1499,
+            "name": "nonce",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "374:20:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1498,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "374:7:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1501,
+            "name": "numAuthKeys",
+            "nodeType": "VariableDeclaration",
+            "scope": 1502,
+            "src": "400:26:14",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1500,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "400:7:14",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1503,
+        "src": "255:174:14"
+      }
+    ],
+    "src": "0:429:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:22.915Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "This contract holds the state variables used by the account contracts.This abstraction exists in order to retain the order of the state variables.",
+    "methods": {},
+    "title": "AccountStateV1"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

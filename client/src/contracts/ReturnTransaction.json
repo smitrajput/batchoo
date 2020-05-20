@@ -1,0 +1,506 @@
+{
+  "contractName": "ReturnTransaction",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_data",
+          "type": "uint256"
+        }
+      ],
+      "name": "UintEvent",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "returnTest",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_data\",\"type\":\"uint256\"}],\"name\":\"UintEvent\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[],\"name\":\"returnTest\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"A contract that has a transaction that will return 123.\",\"methods\":{},\"title\":\"Authereum Return Transaction\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/test/ReturnTransaction.sol\":\"ReturnTransaction\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/test/ReturnTransaction.sol\":{\"keccak256\":\"0x47a7db8ba979057b2a3cf960d1905d965a0bfee11005a4e9aa66d28ede12249d\",\"urls\":[\"bzz-raw://4d99a5b1ace1933b484b4192374eb9dd41b6a4dd9e36bfb0e344ef4727d6fd40\",\"dweb:/ipfs/QmZ2p4rN6iqyFtpg9Ej9oEEEjWT26NCcKgVwCF4UJBuXxW\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060b38061001e6000396000f3fe608060405260043610601c5760003560e01c806357ecc147146021575b600080fd5b6027603d565b6040518082815260200191505060405180910390f35b60007f79c88ed496a053a2df96a8e257d4e63901d9ed34e140a179f61fdff732b8db65607b6040518082815260200191505060405180910390a1607b90509056fea265627a7a723158205c9944bedf21894929715ab47e6cf6c23a4761453d1ceab27c6fc7a455665e2a64736f6c63430005100032",
+  "deployedBytecode": "0x608060405260043610601c5760003560e01c806357ecc147146021575b600080fd5b6027603d565b6040518082815260200191505060405180910390f35b60007f79c88ed496a053a2df96a8e257d4e63901d9ed34e140a179f61fdff732b8db65607b6040518082815260200191505060405180910390a1607b90509056fea265627a7a723158205c9944bedf21894929715ab47e6cf6c23a4761453d1ceab27c6fc7a455665e2a64736f6c63430005100032",
+  "sourceMap": "169:185:38:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;169:185:38;;;;;;;",
+  "deployedSourceMap": "169:185:38:-;;;;;;;;;;;;;;;;;;;;;239:113;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;287:7;311:14;321:3;311:14;;;;;;;;;;;;;;;;;;342:3;335:10;;239:113;:::o",
+  "source": "pragma solidity 0.5.16;\n\n/**\n * @title Authereum Return Transaction\n * @author Authereum Labs, Inc.\n * @dev A contract that has a transaction that will return 123.\n */\n\ncontract ReturnTransaction {\n    event UintEvent(uint256 _data);\n\n    function returnTest() external payable returns (uint256) {\n        emit UintEvent(123);\n        return 123;\n    }\n}\n",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/test/ReturnTransaction.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/test/ReturnTransaction.sol",
+    "exportedSymbols": {
+      "ReturnTransaction": [
+        8744
+      ]
+    },
+    "id": 8745,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8727,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:38"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Authereum Return Transaction\n@author Authereum Labs, Inc.\n@dev A contract that has a transaction that will return 123.",
+        "fullyImplemented": true,
+        "id": 8744,
+        "linearizedBaseContracts": [
+          8744
+        ],
+        "name": "ReturnTransaction",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 8731,
+            "name": "UintEvent",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 8730,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8729,
+                  "indexed": false,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8731,
+                  "src": "218:13:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8728,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "218:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "217:15:38"
+            },
+            "src": "202:31:38"
+          },
+          {
+            "body": {
+              "id": 8742,
+              "nodeType": "Block",
+              "src": "296:56:38",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "313233",
+                        "id": 8737,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "321:3:38",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_123_by_1",
+                          "typeString": "int_const 123"
+                        },
+                        "value": "123"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_123_by_1",
+                          "typeString": "int_const 123"
+                        }
+                      ],
+                      "id": 8736,
+                      "name": "UintEvent",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8731,
+                      "src": "311:9:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 8738,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "311:14:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8739,
+                  "nodeType": "EmitStatement",
+                  "src": "306:19:38"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "313233",
+                    "id": 8740,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "342:3:38",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_123_by_1",
+                      "typeString": "int_const 123"
+                    },
+                    "value": "123"
+                  },
+                  "functionReturnParameters": 8735,
+                  "id": 8741,
+                  "nodeType": "Return",
+                  "src": "335:10:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 8743,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnTest",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8732,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:2:38"
+            },
+            "returnParameters": {
+              "id": 8735,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8734,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8743,
+                  "src": "287:7:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8733,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "287:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "286:9:38"
+            },
+            "scope": 8744,
+            "src": "239:113:38",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8745,
+        "src": "169:185:38"
+      }
+    ],
+    "src": "0:355:38"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/test/ReturnTransaction.sol",
+    "exportedSymbols": {
+      "ReturnTransaction": [
+        8744
+      ]
+    },
+    "id": 8745,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8727,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:38"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Authereum Return Transaction\n@author Authereum Labs, Inc.\n@dev A contract that has a transaction that will return 123.",
+        "fullyImplemented": true,
+        "id": 8744,
+        "linearizedBaseContracts": [
+          8744
+        ],
+        "name": "ReturnTransaction",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 8731,
+            "name": "UintEvent",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 8730,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8729,
+                  "indexed": false,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8731,
+                  "src": "218:13:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8728,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "218:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "217:15:38"
+            },
+            "src": "202:31:38"
+          },
+          {
+            "body": {
+              "id": 8742,
+              "nodeType": "Block",
+              "src": "296:56:38",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "313233",
+                        "id": 8737,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "321:3:38",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_123_by_1",
+                          "typeString": "int_const 123"
+                        },
+                        "value": "123"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_123_by_1",
+                          "typeString": "int_const 123"
+                        }
+                      ],
+                      "id": 8736,
+                      "name": "UintEvent",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8731,
+                      "src": "311:9:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 8738,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "311:14:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8739,
+                  "nodeType": "EmitStatement",
+                  "src": "306:19:38"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "313233",
+                    "id": 8740,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "342:3:38",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_123_by_1",
+                      "typeString": "int_const 123"
+                    },
+                    "value": "123"
+                  },
+                  "functionReturnParameters": 8735,
+                  "id": 8741,
+                  "nodeType": "Return",
+                  "src": "335:10:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 8743,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnTest",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8732,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "258:2:38"
+            },
+            "returnParameters": {
+              "id": 8735,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8734,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8743,
+                  "src": "287:7:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 8733,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "287:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "286:9:38"
+            },
+            "scope": 8744,
+            "src": "239:113:38",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 8745,
+        "src": "169:185:38"
+      }
+    ],
+    "src": "0:355:38"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:23.558Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "A contract that has a transaction that will return 123.",
+    "methods": {},
+    "title": "Authereum Return Transaction"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

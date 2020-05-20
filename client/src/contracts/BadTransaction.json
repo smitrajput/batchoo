@@ -1,0 +1,421 @@
+{
+  "contractName": "BadTransaction",
+  "abi": [
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"A contract that has a transaction that will throw.\",\"methods\":{},\"title\":\"Authereum Bad Transaction\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/test/BadTransaction.sol\":\"BadTransaction\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/test/BadTransaction.sol\":{\"keccak256\":\"0xcd9c6ca4522e9dba69daaea8e1fc6cf8f973ffa7066c1204f2be8bd233187ebd\",\"urls\":[\"bzz-raw://84b42bf10cc883d2d382f574b66cac8b108dcad5639d66fc226fdb6220a5c92e\",\"dweb:/ipfs/QmSFWPnKWkBxFrWn5vhDrcVxpu7wmvi7go46w4VTygz1G9\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060b18061001f6000396000f3fe60806040526002600114607a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600d8152602001807f42543a2057696c6c206661696c0000000000000000000000000000000000000081525060200191505060405180910390fd5b00fea265627a7a72315820f8334650a6e501a2831194a30865e7c5293d6725d542111c11e73989d999148364736f6c63430005100032",
+  "deployedBytecode": "0x60806040526002600114607a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600d8152602001807f42543a2057696c6c206661696c0000000000000000000000000000000000000081525060200191505060405180910390fd5b00fea265627a7a72315820f8334650a6e501a2831194a30865e7c5293d6725d542111c11e73989d999148364736f6c63430005100032",
+  "sourceMap": "161:110:32:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:110:32;;;;;;;",
+  "deployedSourceMap": "161:110:32:-;;;243:1;238;:6;230:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;161:110",
+  "source": "pragma solidity 0.5.16;\n\n/**\n * @title Authereum Bad Transaction\n * @author Authereum Labs, Inc.\n * @dev A contract that has a transaction that will throw.\n */\n\ncontract BadTransaction {\n    function () external payable {\n        require(1 == 2, \"BT: Will fail\");\n    }\n}\n",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/test/BadTransaction.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/test/BadTransaction.sol",
+    "exportedSymbols": {
+      "BadTransaction": [
+        4006
+      ]
+    },
+    "id": 4007,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3994,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:32"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Authereum Bad Transaction\n@author Authereum Labs, Inc.\n@dev A contract that has a transaction that will throw.",
+        "fullyImplemented": true,
+        "id": 4006,
+        "linearizedBaseContracts": [
+          4006
+        ],
+        "name": "BadTransaction",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4004,
+              "nodeType": "Block",
+              "src": "220:49:32",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        },
+                        "id": 4000,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 3998,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "238:1:32",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "32",
+                          "id": 3999,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "243:1:32",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_2_by_1",
+                            "typeString": "int_const 2"
+                          },
+                          "value": "2"
+                        },
+                        "src": "238:6:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "42543a2057696c6c206661696c",
+                        "id": 4001,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "246:15:32",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_893308959ee51d3af1386e27e67e96d3b28285ad2dd887e72ec44dd84c850029",
+                          "typeString": "literal_string \"BT: Will fail\""
+                        },
+                        "value": "BT: Will fail"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_893308959ee51d3af1386e27e67e96d3b28285ad2dd887e72ec44dd84c850029",
+                          "typeString": "literal_string \"BT: Will fail\""
+                        }
+                      ],
+                      "id": 3997,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        11655,
+                        11656
+                      ],
+                      "referencedDeclaration": 11656,
+                      "src": "230:7:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 4002,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "230:32:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4003,
+                  "nodeType": "ExpressionStatement",
+                  "src": "230:32:32"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 4005,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3995,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "200:2:32"
+            },
+            "returnParameters": {
+              "id": 3996,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "220:0:32"
+            },
+            "scope": 4006,
+            "src": "191:78:32",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4007,
+        "src": "161:110:32"
+      }
+    ],
+    "src": "0:272:32"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/test/BadTransaction.sol",
+    "exportedSymbols": {
+      "BadTransaction": [
+        4006
+      ]
+    },
+    "id": 4007,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3994,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:32"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title Authereum Bad Transaction\n@author Authereum Labs, Inc.\n@dev A contract that has a transaction that will throw.",
+        "fullyImplemented": true,
+        "id": 4006,
+        "linearizedBaseContracts": [
+          4006
+        ],
+        "name": "BadTransaction",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4004,
+              "nodeType": "Block",
+              "src": "220:49:32",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        },
+                        "id": 4000,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "31",
+                          "id": 3998,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "238:1:32",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "32",
+                          "id": 3999,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "243:1:32",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_2_by_1",
+                            "typeString": "int_const 2"
+                          },
+                          "value": "2"
+                        },
+                        "src": "238:6:32",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "42543a2057696c6c206661696c",
+                        "id": 4001,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "246:15:32",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_893308959ee51d3af1386e27e67e96d3b28285ad2dd887e72ec44dd84c850029",
+                          "typeString": "literal_string \"BT: Will fail\""
+                        },
+                        "value": "BT: Will fail"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_893308959ee51d3af1386e27e67e96d3b28285ad2dd887e72ec44dd84c850029",
+                          "typeString": "literal_string \"BT: Will fail\""
+                        }
+                      ],
+                      "id": 3997,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        11655,
+                        11656
+                      ],
+                      "referencedDeclaration": 11656,
+                      "src": "230:7:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 4002,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "230:32:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4003,
+                  "nodeType": "ExpressionStatement",
+                  "src": "230:32:32"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 4005,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3995,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "200:2:32"
+            },
+            "returnParameters": {
+              "id": 3996,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "220:0:32"
+            },
+            "scope": 4006,
+            "src": "191:78:32",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4007,
+        "src": "161:110:32"
+      }
+    ],
+    "src": "0:272:32"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:23.016Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "A contract that has a transaction that will throw.",
+    "methods": {},
+    "title": "Authereum Bad Transaction"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

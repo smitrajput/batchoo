@@ -1,0 +1,1202 @@
+{
+  "contractName": "AccountInitializeV1",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "authKey",
+          "type": "address"
+        }
+      ],
+      "name": "AuthKeyAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "authKey",
+          "type": "address"
+        }
+      ],
+      "name": "AuthKeyRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "reason",
+          "type": "string"
+        }
+      ],
+      "name": "CallFailed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authKeys",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastInitializedVersion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "numAuthKeys",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_authKey",
+          "type": "address"
+        }
+      ],
+      "name": "initializeV1",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"authKey\",\"type\":\"address\"}],\"name\":\"AuthKeyAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"authKey\",\"type\":\"address\"}],\"name\":\"AuthKeyRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"reason\",\"type\":\"string\"}],\"name\":\"CallFailed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"}],\"name\":\"Upgraded\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"authKeys\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_authKey\",\"type\":\"address\"}],\"name\":\"initializeV1\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"lastInitializedVersion\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numAuthKeys\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"This contract holds the initialize function used by the account contracts.This abstraction exists in order to retain the order of the initialization functions.\",\"methods\":{\"initializeV1(address)\":{\"details\":\"Initialize the Authereum Account\",\"params\":{\"_authKey\":\"authKey that will own this account\"}}},\"title\":\"AccountInitializeV1\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol\":\"AccountInitializeV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol\":{\"keccak256\":\"0xb88871c8b07c27aec8f493de3c73d440a01e27e46eb9b85a6696ce27c50c82a5\",\"urls\":[\"bzz-raw://fb1469cc7188640ebafe5bca2318d8d8b73bd05e46956a73f171c0732fe10aac\",\"dweb:/ipfs/QmQtYPiotT3ZKAbnXTU4y4Z7KXwU9VsftkmPCfeC8dQiA4\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol\":{\"keccak256\":\"0x7f049747e85e1673a04cf037e1be96b498666c48c166eef06271ed86d9693931\",\"urls\":[\"bzz-raw://488024e7f26f01b4953f3a71b4b01534d0a063bce7b076ae93c5be63eac91e9f\",\"dweb:/ipfs/QmNa8Rwjo7bCivtAuLEU8KnHmSyTFi2sRZAqY7JGWrj1mn\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol\":{\"keccak256\":\"0x4ca8d2bc1ad7812ed5888c4e1360eb2149da0e78f198bcd9fc9705f78cbe603d\",\"urls\":[\"bzz-raw://45bdb52eb3b30d1b426e9b2b5f5e3da649639ce11ea7e38db6ae4be960377822\",\"dweb:/ipfs/Qma65bYE7ZA7K5XQduyriSwP9ojNjBnYXg74HBMsc3XmVt\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol\":{\"keccak256\":\"0xcfb4767ffef498abc93d41400207c2ffcaec8c6aee6098da9cd4efa0386911c4\",\"urls\":[\"bzz-raw://74aa89ee35c7fad5569ce484c309e53fec22f3fb3bffb0365332d597ef043b57\",\"dweb:/ipfs/QmYMNQtds3mhuSX4erkSHasz8dDtP8PtrS1P7wBQbU8on7\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102ee806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80631b9a9f9e1461005c5780635175ca5e146100a05780637e7fd66c146100fc578063affed0e01461011a578063ec5e319e14610138575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610156565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610266565b604051808215151515815260200191505060405180910390f35b610104610286565b6040518082815260200191505060405180910390f35b61012261028c565b6040518082815260200191505060405180910390f35b610140610292565b6040518082815260200191505060405180910390f35b60008054146101b0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806102996021913960400191505060405180910390fd5b600160008190555060018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555060016003600082825401925050819055508073ffffffffffffffffffffffffffffffffffffffff167fb020719d16d3c4de45a91f9c329aa61d5bad3f44f760840c8d5d82d4cd3bcc3360405160405180910390a250565b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fe41493a20496d70726f70657220696e697469616c697a6174696f6e206f72646572a265627a7a723158206885bdc92f8470db3d1aa88790f29967b9521b3b7ccdd905e27431f0fac8145564736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80631b9a9f9e1461005c5780635175ca5e146100a05780637e7fd66c146100fc578063affed0e01461011a578063ec5e319e14610138575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610156565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610266565b604051808215151515815260200191505060405180910390f35b610104610286565b6040518082815260200191505060405180910390f35b61012261028c565b6040518082815260200191505060405180910390f35b610140610292565b6040518082815260200191505060405180910390f35b60008054146101b0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806102996021913960400191505060405180910390fd5b600160008190555060018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555060016003600082825401925050819055508073ffffffffffffffffffffffffffffffffffffffff167fb020719d16d3c4de45a91f9c329aa61d5bad3f44f760840c8d5d82d4cd3bcc3360405160405180910390a250565b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fe41493a20496d70726f70657220696e697469616c697a6174696f6e206f72646572a265627a7a723158206885bdc92f8470db3d1aa88790f29967b9521b3b7ccdd905e27431f0fac8145564736f6c63430005100032",
+  "sourceMap": "347:501:12:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;347:501:12;;;;;;;",
+  "deployedSourceMap": "347:501:12:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;347:501:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;519:327;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;519:327:12;;;;;;;;;;;;;;;;;;;:::i;:::-;;328:40:14;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;328:40:14;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;285:37;;;:::i;:::-;;;;;;;;;;;;;;;;;;;374:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;400:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;519:327:12;636:1;610:22;;:27;602:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;710:1;685:22;:26;;;;772:4;751:8;:18;760:8;751:18;;;;;;;;;;;;;;;;:25;;;;;;;;;;;;;;;;;;801:1;786:11;;:16;;;;;;;;;;;830:8;817:22;;;;;;;;;;;;519:327;:::o;328:40:14:-;;;;;;;;;;;;;;;;;;;;;;:::o;285:37::-;;;;:::o;374:20::-;;;;:::o;400:26::-;;;;:::o",
+  "source": "pragma solidity 0.5.16;\n\nimport \"../state/AccountState.sol\";\nimport \"../event/AccountEvents.sol\";\n\n/**\n * @title AccountInitializeV1\n * @author Authereum Labs, Inc.\n * @dev This contract holds the initialize function used by the account contracts.\n * @dev This abstraction exists in order to retain the order of the initialization functions.\n */\n\ncontract AccountInitializeV1 is AccountState, AccountEvents {\n\n    /// @dev Initialize the Authereum Account\n    /// @param _authKey authKey that will own this account\n    function initializeV1(\n        address _authKey\n    )\n        public\n    {\n        require(lastInitializedVersion == 0, \"AI: Improper initialization order\");\n        lastInitializedVersion = 1;\n\n        // Add first authKey\n        authKeys[_authKey] = true;\n        numAuthKeys += 1;\n        emit AuthKeyAdded(_authKey);\n    }\n}",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol",
+    "exportedSymbols": {
+      "AccountInitializeV1": [
+        1483
+      ]
+    },
+    "id": 1484,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1445,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:12"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol",
+        "file": "../state/AccountState.sol",
+        "id": 1446,
+        "nodeType": "ImportDirective",
+        "scope": 1484,
+        "sourceUnit": 1490,
+        "src": "25:35:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol",
+        "file": "../event/AccountEvents.sol",
+        "id": 1447,
+        "nodeType": "ImportDirective",
+        "scope": 1484,
+        "sourceUnit": 1438,
+        "src": "61:36:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1448,
+              "name": "AccountState",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1489,
+              "src": "379:12:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountState_$1489",
+                "typeString": "contract AccountState"
+              }
+            },
+            "id": 1449,
+            "nodeType": "InheritanceSpecifier",
+            "src": "379:12:12"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1450,
+              "name": "AccountEvents",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1437,
+              "src": "393:13:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountEvents_$1437",
+                "typeString": "contract AccountEvents"
+              }
+            },
+            "id": 1451,
+            "nodeType": "InheritanceSpecifier",
+            "src": "393:13:12"
+          }
+        ],
+        "contractDependencies": [
+          1437,
+          1489,
+          1502
+        ],
+        "contractKind": "contract",
+        "documentation": "@title AccountInitializeV1\n@author Authereum Labs, Inc.\n@dev This contract holds the initialize function used by the account contracts.\n@dev This abstraction exists in order to retain the order of the initialization functions.",
+        "fullyImplemented": true,
+        "id": 1483,
+        "linearizedBaseContracts": [
+          1483,
+          1437,
+          1489,
+          1502
+        ],
+        "name": "AccountInitializeV1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1481,
+              "nodeType": "Block",
+              "src": "592:254:12",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 1459,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1457,
+                          "name": "lastInitializedVersion",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1493,
+                          "src": "610:22:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 1458,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "636:1:12",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "610:27:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41493a20496d70726f70657220696e697469616c697a6174696f6e206f72646572",
+                        "id": 1460,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "639:35:12",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_74a5c9fb9135c2b2b9b3ae1a18b94c4513fdbfdb2df4a607d12c8a00b74b9aa7",
+                          "typeString": "literal_string \"AI: Improper initialization order\""
+                        },
+                        "value": "AI: Improper initialization order"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_74a5c9fb9135c2b2b9b3ae1a18b94c4513fdbfdb2df4a607d12c8a00b74b9aa7",
+                          "typeString": "literal_string \"AI: Improper initialization order\""
+                        }
+                      ],
+                      "id": 1456,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        11655,
+                        11656
+                      ],
+                      "referencedDeclaration": 11656,
+                      "src": "602:7:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1461,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "602:73:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1462,
+                  "nodeType": "ExpressionStatement",
+                  "src": "602:73:12"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1465,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1463,
+                      "name": "lastInitializedVersion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1493,
+                      "src": "685:22:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 1464,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "710:1:12",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "685:26:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1466,
+                  "nodeType": "ExpressionStatement",
+                  "src": "685:26:12"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1471,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 1467,
+                        "name": "authKeys",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1497,
+                        "src": "751:8:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 1469,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 1468,
+                        "name": "_authKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1453,
+                        "src": "760:8:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "751:18:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 1470,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "772:4:12",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "751:25:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1472,
+                  "nodeType": "ExpressionStatement",
+                  "src": "751:25:12"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1475,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1473,
+                      "name": "numAuthKeys",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1501,
+                      "src": "786:11:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 1474,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "801:1:12",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "786:16:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1476,
+                  "nodeType": "ExpressionStatement",
+                  "src": "786:16:12"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1478,
+                        "name": "_authKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1453,
+                        "src": "830:8:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1477,
+                      "name": "AuthKeyAdded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1424,
+                      "src": "817:12:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 1479,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "817:22:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1480,
+                  "nodeType": "EmitStatement",
+                  "src": "812:27:12"
+                }
+              ]
+            },
+            "documentation": "@dev Initialize the Authereum Account\n @param _authKey authKey that will own this account",
+            "id": 1482,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initializeV1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1454,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1453,
+                  "name": "_authKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1482,
+                  "src": "550:16:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1452,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "540:32:12"
+            },
+            "returnParameters": {
+              "id": 1455,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "592:0:12"
+            },
+            "scope": 1483,
+            "src": "519:327:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1484,
+        "src": "347:501:12"
+      }
+    ],
+    "src": "0:848:12"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol",
+    "exportedSymbols": {
+      "AccountInitializeV1": [
+        1483
+      ]
+    },
+    "id": 1484,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1445,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:12"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol",
+        "file": "../state/AccountState.sol",
+        "id": 1446,
+        "nodeType": "ImportDirective",
+        "scope": 1484,
+        "sourceUnit": 1490,
+        "src": "25:35:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol",
+        "file": "../event/AccountEvents.sol",
+        "id": 1447,
+        "nodeType": "ImportDirective",
+        "scope": 1484,
+        "sourceUnit": 1438,
+        "src": "61:36:12",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1448,
+              "name": "AccountState",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1489,
+              "src": "379:12:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountState_$1489",
+                "typeString": "contract AccountState"
+              }
+            },
+            "id": 1449,
+            "nodeType": "InheritanceSpecifier",
+            "src": "379:12:12"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1450,
+              "name": "AccountEvents",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1437,
+              "src": "393:13:12",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountEvents_$1437",
+                "typeString": "contract AccountEvents"
+              }
+            },
+            "id": 1451,
+            "nodeType": "InheritanceSpecifier",
+            "src": "393:13:12"
+          }
+        ],
+        "contractDependencies": [
+          1437,
+          1489,
+          1502
+        ],
+        "contractKind": "contract",
+        "documentation": "@title AccountInitializeV1\n@author Authereum Labs, Inc.\n@dev This contract holds the initialize function used by the account contracts.\n@dev This abstraction exists in order to retain the order of the initialization functions.",
+        "fullyImplemented": true,
+        "id": 1483,
+        "linearizedBaseContracts": [
+          1483,
+          1437,
+          1489,
+          1502
+        ],
+        "name": "AccountInitializeV1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1481,
+              "nodeType": "Block",
+              "src": "592:254:12",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 1459,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 1457,
+                          "name": "lastInitializedVersion",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1493,
+                          "src": "610:22:12",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "30",
+                          "id": 1458,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "636:1:12",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_0_by_1",
+                            "typeString": "int_const 0"
+                          },
+                          "value": "0"
+                        },
+                        "src": "610:27:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "41493a20496d70726f70657220696e697469616c697a6174696f6e206f72646572",
+                        "id": 1460,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "639:35:12",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_74a5c9fb9135c2b2b9b3ae1a18b94c4513fdbfdb2df4a607d12c8a00b74b9aa7",
+                          "typeString": "literal_string \"AI: Improper initialization order\""
+                        },
+                        "value": "AI: Improper initialization order"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_74a5c9fb9135c2b2b9b3ae1a18b94c4513fdbfdb2df4a607d12c8a00b74b9aa7",
+                          "typeString": "literal_string \"AI: Improper initialization order\""
+                        }
+                      ],
+                      "id": 1456,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        11655,
+                        11656
+                      ],
+                      "referencedDeclaration": 11656,
+                      "src": "602:7:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 1461,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "602:73:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1462,
+                  "nodeType": "ExpressionStatement",
+                  "src": "602:73:12"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1465,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1463,
+                      "name": "lastInitializedVersion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1493,
+                      "src": "685:22:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 1464,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "710:1:12",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "685:26:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1466,
+                  "nodeType": "ExpressionStatement",
+                  "src": "685:26:12"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1471,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 1467,
+                        "name": "authKeys",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1497,
+                        "src": "751:8:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
+                          "typeString": "mapping(address => bool)"
+                        }
+                      },
+                      "id": 1469,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 1468,
+                        "name": "_authKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1453,
+                        "src": "760:8:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "751:18:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 1470,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "772:4:12",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "751:25:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 1472,
+                  "nodeType": "ExpressionStatement",
+                  "src": "751:25:12"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1475,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1473,
+                      "name": "numAuthKeys",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1501,
+                      "src": "786:11:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 1474,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "801:1:12",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "786:16:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 1476,
+                  "nodeType": "ExpressionStatement",
+                  "src": "786:16:12"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1478,
+                        "name": "_authKey",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1453,
+                        "src": "830:8:12",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1477,
+                      "name": "AuthKeyAdded",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1424,
+                      "src": "817:12:12",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 1479,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "817:22:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1480,
+                  "nodeType": "EmitStatement",
+                  "src": "812:27:12"
+                }
+              ]
+            },
+            "documentation": "@dev Initialize the Authereum Account\n @param _authKey authKey that will own this account",
+            "id": 1482,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initializeV1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1454,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1453,
+                  "name": "_authKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1482,
+                  "src": "550:16:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1452,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:7:12",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "540:32:12"
+            },
+            "returnParameters": {
+              "id": 1455,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "592:0:12"
+            },
+            "scope": 1483,
+            "src": "519:327:12",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1484,
+        "src": "347:501:12"
+      }
+    ],
+    "src": "0:848:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:22.912Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "This contract holds the initialize function used by the account contracts.This abstraction exists in order to retain the order of the initialization functions.",
+    "methods": {
+      "initializeV1(address)": {
+        "details": "Initialize the Authereum Account",
+        "params": {
+          "_authKey": "authKey that will own this account"
+        }
+      }
+    },
+    "title": "AccountInitializeV1"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

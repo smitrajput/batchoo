@@ -1,0 +1,744 @@
+{
+  "contractName": "AuthereumEnsResolverStateV1",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "addrs",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "hashes",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "names",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "texts",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "timelockContract",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"addrs\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"hashes\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"names\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"texts\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"timelockContract\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"This contract holds the state variables used by the Authereum ENS Resolver.This abscraction exists in order to retain the order of the state variables.\",\"methods\":{},\"title\":\"AuthereumEnsResolverStateV1\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/ens/state/AuthereumEnsResolverStateV1.sol\":\"AuthereumEnsResolverStateV1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/ens/state/AuthereumEnsResolverStateV1.sol\":{\"keccak256\":\"0x7ddd9fa4ff3643dc1a6496b75c594d97db60dacc3c3043a3b5ea0905af74542c\",\"urls\":[\"bzz-raw://af11ae956e20493072ff9bcad708556de7bc27aac3720e42b531e815b2299a46\",\"dweb:/ipfs/QmeAZyKsQMiyCRJVnYeei22cTWKTYFsur5nTBMWN8rTaqS\"]},\"/Users/smitrajput/Projects/batchoo/contracts/test/EnsRegistry.sol\":{\"keccak256\":\"0xfdde5f8dba20eb17d87dcdcf920f19dc9f8ff266178a73c2abc1d2f1442adba5\",\"urls\":[\"bzz-raw://947ed6c03449d059740302828800157ca4b1caa946c4d2ff2e51d3b320a5afc5\",\"dweb:/ipfs/QmQqq2pQWVQpmGJsB6vQdLVmTUXef5PUrnTfR7dNbJ42WC\"]},\"/Users/smitrajput/Projects/batchoo/contracts/test/EnsResolver.sol\":{\"keccak256\":\"0x1962e239ed7f91139de37f254bea92f5b6252e66599344a254a9d8868fa63437\",\"urls\":[\"bzz-raw://f17f6682526e5ca8e89920fed45d2c7b76b135d0ebba0ead6d047eb4d045f404\",\"dweb:/ipfs/Qmf4ZHjmxRYLWfamu7WmcDfGipeAyR7NxHh4wU6TZQSECd\"]},\"/Users/smitrajput/Projects/batchoo/contracts/test/EnsReverseRegistrar.sol\":{\"keccak256\":\"0xc83fa2ce307b4f0b5791eb7fb21ccba352f909e52b10a7fab5546c1e2691be01\",\"urls\":[\"bzz-raw://c8c1d13191ac4d8afc46505476164625718b4da8fa84594fc77411ad5c268489\",\"dweb:/ipfs/QmcGWhV8G8BEnf93J2NBGHL89NDgR69xjJoMki9o9HfYMB\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610661806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c806320c38e2b1461005c57806372dead8a14610103578063a9181cc414610171578063d658d2e9146101bb578063ea5822c614610262575b600080fd5b6100886004803603602081101561007257600080fd5b81019080803590602001909291905050506103a0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c85780820151818401526020810190506100ad565b50505050905090810190601f1680156100f55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61012f6004803603602081101561011957600080fd5b8101908080359060200190929190505050610450565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610179610483565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101e7600480360360208110156101d157600080fd5b81019080803590602001909291905050506104a9565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561022757808201518184015260208101905061020c565b50505050905090810190601f1680156102545780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6103256004803603604081101561027857600080fd5b81019080803590602001909291908035906020019064010000000081111561029f57600080fd5b8201836020820111156102b157600080fd5b803590602001918460018302840111640100000000831117156102d357600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610559565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561036557808201518184015260208101905061034a565b50505050905090810190601f1680156103925780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60036020528060005260406000206000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104485780601f1061041d57610100808354040283529160200191610448565b820191906000526020600020905b81548152906001019060200180831161042b57829003601f168201915b505050505081565b60026020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60056020528060005260406000206000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105515780601f1061052657610100808354040283529160200191610551565b820191906000526020600020905b81548152906001019060200180831161053457829003601f168201915b505050505081565b600460205281600052604060002081805160208101820180518482526020830160208501208183528095505050505050600091509150508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106245780601f106105f957610100808354040283529160200191610624565b820191906000526020600020905b81548152906001019060200180831161060757829003601f168201915b50505050508156fea265627a7a723158208455184da618d8e11ecd128ee19d6432f2b231c9d05eff58241671f0cd16f87a64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c806320c38e2b1461005c57806372dead8a14610103578063a9181cc414610171578063d658d2e9146101bb578063ea5822c614610262575b600080fd5b6100886004803603602081101561007257600080fd5b81019080803590602001909291905050506103a0565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100c85780820151818401526020810190506100ad565b50505050905090810190601f1680156100f55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b61012f6004803603602081101561011957600080fd5b8101908080359060200190929190505050610450565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610179610483565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101e7600480360360208110156101d157600080fd5b81019080803590602001909291905050506104a9565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561022757808201518184015260208101905061020c565b50505050905090810190601f1680156102545780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6103256004803603604081101561027857600080fd5b81019080803590602001909291908035906020019064010000000081111561029f57600080fd5b8201836020820111156102b157600080fd5b803590602001918460018302840111640100000000831117156102d357600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610559565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561036557808201518184015260208101905061034a565b50505050905090810190601f1680156103925780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60036020528060005260406000206000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104485780601f1061041d57610100808354040283529160200191610448565b820191906000526020600020905b81548152906001019060200180831161042b57829003601f168201915b505050505081565b60026020528060005260406000206000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60056020528060005260406000206000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105515780601f1061052657610100808354040283529160200191610551565b820191906000526020600020905b81548152906001019060200180831161053457829003601f168201915b505050505081565b600460205281600052604060002081805160208101820180518482526020830160208501208183528095505050505050600091509150508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106245780601f106105f957610100808354040283529160200191610624565b820191906000526020600020905b81548152906001019060200180831161060757829003601f168201915b50505050508156fea265627a7a723158208455184da618d8e11ecd128ee19d6432f2b231c9d05eff58241671f0cd16f87a64736f6c63430005100032",
+  "sourceMap": "319:301:22:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;319:301:22;;;;;;;",
+  "deployedSourceMap": "319:301:22:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;319:301:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;469:39;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;469:39:22;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;469:39:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;422:41;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;422:41:22;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;384:31;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;578:39;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;578:39:22;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;578:39:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;514:58;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;514:58:22;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;514:58:22;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;514:58:22;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;514:58:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;514:58:22;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;514:58:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;469:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;422:41::-;;;;;;;;;;;;;;;;;;;;;;:::o;384:31::-;;;;;;;;;;;;;:::o;578:39::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;514:58::-;;;;;;;;;;;28:7:-1;22:14;169:4;160:7;156:18;147:7;143:32;204:13;198:20;246:8;231:13;224:31;316:4;307:7;303:18;296:4;287:7;283:18;273:49;350:9;335:13;328:32;378:4;366:16;;0:388;;;;514:58:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity 0.5.16;\n\nimport \"../../test/EnsReverseRegistrar.sol\";\n\n/**\n * @title AuthereumEnsResolverStateV1\n * @author Authereum Labs, Inc.\n * @dev This contract holds the state variables used by the Authereum ENS Resolver.\n * @dev This abscraction exists in order to retain the order of the state variables.\n */\n\ncontract AuthereumEnsResolverStateV1 {\n\n    EnsRegistry ens;\n    address public timelockContract;\n\n    mapping (bytes32 => address) public addrs;\n    mapping(bytes32 => string) public names;\n    mapping(bytes32 => mapping(string => string)) public texts;\n    mapping(bytes32 => bytes) public hashes;\n}",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/ens/state/AuthereumEnsResolverStateV1.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/ens/state/AuthereumEnsResolverStateV1.sol",
+    "exportedSymbols": {
+      "AuthereumEnsResolverStateV1": [
+        3092
+      ]
+    },
+    "id": 3093,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3068,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:22"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/test/EnsReverseRegistrar.sol",
+        "file": "../../test/EnsReverseRegistrar.sol",
+        "id": 3069,
+        "nodeType": "ImportDirective",
+        "scope": 3093,
+        "sourceUnit": 8589,
+        "src": "25:44:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title AuthereumEnsResolverStateV1\n@author Authereum Labs, Inc.\n@dev This contract holds the state variables used by the Authereum ENS Resolver.\n@dev This abscraction exists in order to retain the order of the state variables.",
+        "fullyImplemented": true,
+        "id": 3092,
+        "linearizedBaseContracts": [
+          3092
+        ],
+        "name": "AuthereumEnsResolverStateV1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3071,
+            "name": "ens",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "363:15:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_EnsRegistry_$7851",
+              "typeString": "contract EnsRegistry"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3070,
+              "name": "EnsRegistry",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 7851,
+              "src": "363:11:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EnsRegistry_$7851",
+                "typeString": "contract EnsRegistry"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 3073,
+            "name": "timelockContract",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "384:31:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 3072,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "384:7:22",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3077,
+            "name": "addrs",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "422:41:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_address_$",
+              "typeString": "mapping(bytes32 => address)"
+            },
+            "typeName": {
+              "id": 3076,
+              "keyType": {
+                "id": 3074,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "431:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "422:28:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_address_$",
+                "typeString": "mapping(bytes32 => address)"
+              },
+              "valueType": {
+                "id": 3075,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "442:7:22",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3081,
+            "name": "names",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "469:39:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
+              "typeString": "mapping(bytes32 => string)"
+            },
+            "typeName": {
+              "id": 3080,
+              "keyType": {
+                "id": 3078,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "477:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "469:26:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
+                "typeString": "mapping(bytes32 => string)"
+              },
+              "valueType": {
+                "id": 3079,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "488:6:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3087,
+            "name": "texts",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "514:58:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_string_memory_$_t_string_storage_$_$",
+              "typeString": "mapping(bytes32 => mapping(string => string))"
+            },
+            "typeName": {
+              "id": 3086,
+              "keyType": {
+                "id": 3082,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "522:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "514:45:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_string_memory_$_t_string_storage_$_$",
+                "typeString": "mapping(bytes32 => mapping(string => string))"
+              },
+              "valueType": {
+                "id": 3085,
+                "keyType": {
+                  "id": 3083,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "541:6:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "533:25:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_string_memory_$_t_string_storage_$",
+                  "typeString": "mapping(string => string)"
+                },
+                "valueType": {
+                  "id": 3084,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "551:6:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3091,
+            "name": "hashes",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "578:39:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_bytes_storage_$",
+              "typeString": "mapping(bytes32 => bytes)"
+            },
+            "typeName": {
+              "id": 3090,
+              "keyType": {
+                "id": 3088,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "586:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "578:25:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_bytes_storage_$",
+                "typeString": "mapping(bytes32 => bytes)"
+              },
+              "valueType": {
+                "id": 3089,
+                "name": "bytes",
+                "nodeType": "ElementaryTypeName",
+                "src": "597:5:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3093,
+        "src": "319:301:22"
+      }
+    ],
+    "src": "0:620:22"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/ens/state/AuthereumEnsResolverStateV1.sol",
+    "exportedSymbols": {
+      "AuthereumEnsResolverStateV1": [
+        3092
+      ]
+    },
+    "id": 3093,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3068,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:22"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/test/EnsReverseRegistrar.sol",
+        "file": "../../test/EnsReverseRegistrar.sol",
+        "id": 3069,
+        "nodeType": "ImportDirective",
+        "scope": 3093,
+        "sourceUnit": 8589,
+        "src": "25:44:22",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title AuthereumEnsResolverStateV1\n@author Authereum Labs, Inc.\n@dev This contract holds the state variables used by the Authereum ENS Resolver.\n@dev This abscraction exists in order to retain the order of the state variables.",
+        "fullyImplemented": true,
+        "id": 3092,
+        "linearizedBaseContracts": [
+          3092
+        ],
+        "name": "AuthereumEnsResolverStateV1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3071,
+            "name": "ens",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "363:15:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_EnsRegistry_$7851",
+              "typeString": "contract EnsRegistry"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3070,
+              "name": "EnsRegistry",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 7851,
+              "src": "363:11:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EnsRegistry_$7851",
+                "typeString": "contract EnsRegistry"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 3073,
+            "name": "timelockContract",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "384:31:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 3072,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "384:7:22",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3077,
+            "name": "addrs",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "422:41:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_address_$",
+              "typeString": "mapping(bytes32 => address)"
+            },
+            "typeName": {
+              "id": 3076,
+              "keyType": {
+                "id": 3074,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "431:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "422:28:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_address_$",
+                "typeString": "mapping(bytes32 => address)"
+              },
+              "valueType": {
+                "id": 3075,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "442:7:22",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3081,
+            "name": "names",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "469:39:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
+              "typeString": "mapping(bytes32 => string)"
+            },
+            "typeName": {
+              "id": 3080,
+              "keyType": {
+                "id": 3078,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "477:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "469:26:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_string_storage_$",
+                "typeString": "mapping(bytes32 => string)"
+              },
+              "valueType": {
+                "id": 3079,
+                "name": "string",
+                "nodeType": "ElementaryTypeName",
+                "src": "488:6:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3087,
+            "name": "texts",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "514:58:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_string_memory_$_t_string_storage_$_$",
+              "typeString": "mapping(bytes32 => mapping(string => string))"
+            },
+            "typeName": {
+              "id": 3086,
+              "keyType": {
+                "id": 3082,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "522:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "514:45:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_string_memory_$_t_string_storage_$_$",
+                "typeString": "mapping(bytes32 => mapping(string => string))"
+              },
+              "valueType": {
+                "id": 3085,
+                "keyType": {
+                  "id": 3083,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "541:6:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "533:25:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_string_memory_$_t_string_storage_$",
+                  "typeString": "mapping(string => string)"
+                },
+                "valueType": {
+                  "id": 3084,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "551:6:22",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 3091,
+            "name": "hashes",
+            "nodeType": "VariableDeclaration",
+            "scope": 3092,
+            "src": "578:39:22",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_bytes_storage_$",
+              "typeString": "mapping(bytes32 => bytes)"
+            },
+            "typeName": {
+              "id": 3090,
+              "keyType": {
+                "id": 3088,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "586:7:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "578:25:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_bytes_storage_$",
+                "typeString": "mapping(bytes32 => bytes)"
+              },
+              "valueType": {
+                "id": 3089,
+                "name": "bytes",
+                "nodeType": "ElementaryTypeName",
+                "src": "597:5:22",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3093,
+        "src": "319:301:22"
+      }
+    ],
+    "src": "0:620:22"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:22.938Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "This contract holds the state variables used by the Authereum ENS Resolver.This abscraction exists in order to retain the order of the state variables.",
+    "methods": {},
+    "title": "AuthereumEnsResolverStateV1"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

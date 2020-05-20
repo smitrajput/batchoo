@@ -1,0 +1,238 @@
+{
+  "contractName": "AccountState",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authKeys",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastInitializedVersion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "numAuthKeys",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"authKeys\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"lastInitializedVersion\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numAuthKeys\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"This contract holds the state variables used by the account contracts.This exists as the main contract to hold state. This contract is inheritedby Account.sol, which will not care about state as long as it inheritsAccountState.sol. Any state variable additions will be made to the variousversions of AccountStateVX that this contract will inherit.\",\"methods\":{},\"title\":\"AccountState\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol\":\"AccountState\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol\":{\"keccak256\":\"0x4ca8d2bc1ad7812ed5888c4e1360eb2149da0e78f198bcd9fc9705f78cbe603d\",\"urls\":[\"bzz-raw://45bdb52eb3b30d1b426e9b2b5f5e3da649639ce11ea7e38db6ae4be960377822\",\"dweb:/ipfs/Qma65bYE7ZA7K5XQduyriSwP9ojNjBnYXg74HBMsc3XmVt\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol\":{\"keccak256\":\"0xcfb4767ffef498abc93d41400207c2ffcaec8c6aee6098da9cd4efa0386911c4\",\"urls\":[\"bzz-raw://74aa89ee35c7fad5569ce484c309e53fec22f3fb3bffb0365332d597ef043b57\",\"dweb:/ipfs/QmYMNQtds3mhuSX4erkSHasz8dDtP8PtrS1P7wBQbU8on7\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061016e806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80635175ca5e146100515780637e7fd66c146100ad578063affed0e0146100cb578063ec5e319e146100e9575b600080fd5b6100936004803603602081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610107565b604051808215151515815260200191505060405180910390f35b6100b5610127565b6040518082815260200191505060405180910390f35b6100d361012d565b6040518082815260200191505060405180910390f35b6100f1610133565b6040518082815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fea265627a7a723158206083053ff6c42fae7f91bd3c37f87b9e1f7ba8a537c9741b6031038c33e5196164736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80635175ca5e146100515780637e7fd66c146100ad578063affed0e0146100cb578063ec5e319e146100e9575b600080fd5b6100936004803603602081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610107565b604051808215151515815260200191505060405180910390f35b6100b5610127565b6040518082815260200191505060405180910390f35b6100d361012d565b6040518082815260200191505060405180910390f35b6100f1610133565b6040518082815260200191505060405180910390f35b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fea265627a7a723158206083053ff6c42fae7f91bd3c37f87b9e1f7ba8a537c9741b6031038c33e5196164736f6c63430005100032",
+  "sourceMap": "513:42:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;513:42:13;;;;;;;",
+  "deployedSourceMap": "513:42:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;513:42:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;328:40:14;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;328:40:14;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;285:37;;;:::i;:::-;;;;;;;;;;;;;;;;;;;374:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;400:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;328:40;;;;;;;;;;;;;;;;;;;;;;:::o;285:37::-;;;;:::o;374:20::-;;;;:::o;400:26::-;;;;:::o",
+  "source": "pragma solidity 0.5.16;\n\nimport \"./AccountStateV1.sol\";\n\n/**\n * @title AccountState\n * @author Authereum Labs, Inc.\n * @dev This contract holds the state variables used by the account contracts.\n * @dev This exists as the main contract to hold state. This contract is inherited\n * @dev by Account.sol, which will not care about state as long as it inherits\n * @dev AccountState.sol. Any state variable additions will be made to the various\n * @dev versions of AccountStateVX that this contract will inherit.\n */\n\ncontract AccountState is AccountStateV1 {}",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol",
+    "exportedSymbols": {
+      "AccountState": [
+        1489
+      ]
+    },
+    "id": 1490,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1485,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol",
+        "file": "./AccountStateV1.sol",
+        "id": 1486,
+        "nodeType": "ImportDirective",
+        "scope": 1490,
+        "sourceUnit": 1503,
+        "src": "25:30:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1487,
+              "name": "AccountStateV1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1502,
+              "src": "538:14:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountStateV1_$1502",
+                "typeString": "contract AccountStateV1"
+              }
+            },
+            "id": 1488,
+            "nodeType": "InheritanceSpecifier",
+            "src": "538:14:13"
+          }
+        ],
+        "contractDependencies": [
+          1502
+        ],
+        "contractKind": "contract",
+        "documentation": "@title AccountState\n@author Authereum Labs, Inc.\n@dev This contract holds the state variables used by the account contracts.\n@dev This exists as the main contract to hold state. This contract is inherited\n@dev by Account.sol, which will not care about state as long as it inherits\n@dev AccountState.sol. Any state variable additions will be made to the various\n@dev versions of AccountStateVX that this contract will inherit.",
+        "fullyImplemented": true,
+        "id": 1489,
+        "linearizedBaseContracts": [
+          1489,
+          1502
+        ],
+        "name": "AccountState",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1490,
+        "src": "513:42:13"
+      }
+    ],
+    "src": "0:555:13"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol",
+    "exportedSymbols": {
+      "AccountState": [
+        1489
+      ]
+    },
+    "id": 1490,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1485,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol",
+        "file": "./AccountStateV1.sol",
+        "id": 1486,
+        "nodeType": "ImportDirective",
+        "scope": 1490,
+        "sourceUnit": 1503,
+        "src": "25:30:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1487,
+              "name": "AccountStateV1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1502,
+              "src": "538:14:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountStateV1_$1502",
+                "typeString": "contract AccountStateV1"
+              }
+            },
+            "id": 1488,
+            "nodeType": "InheritanceSpecifier",
+            "src": "538:14:13"
+          }
+        ],
+        "contractDependencies": [
+          1502
+        ],
+        "contractKind": "contract",
+        "documentation": "@title AccountState\n@author Authereum Labs, Inc.\n@dev This contract holds the state variables used by the account contracts.\n@dev This exists as the main contract to hold state. This contract is inherited\n@dev by Account.sol, which will not care about state as long as it inherits\n@dev AccountState.sol. Any state variable additions will be made to the various\n@dev versions of AccountStateVX that this contract will inherit.",
+        "fullyImplemented": true,
+        "id": 1489,
+        "linearizedBaseContracts": [
+          1489,
+          1502
+        ],
+        "name": "AccountState",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1490,
+        "src": "513:42:13"
+      }
+    ],
+    "src": "0:555:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:22.914Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "This contract holds the state variables used by the account contracts.This exists as the main contract to hold state. This contract is inheritedby Account.sol, which will not care about state as long as it inheritsAccountState.sol. Any state variable additions will be made to the variousversions of AccountStateVX that this contract will inherit.",
+    "methods": {},
+    "title": "AccountState"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

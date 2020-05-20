@@ -1,0 +1,502 @@
+{
+  "contractName": "AccountEvents",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "authKey",
+          "type": "address"
+        }
+      ],
+      "name": "AuthKeyAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "authKey",
+          "type": "address"
+        }
+      ],
+      "name": "AuthKeyRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "reason",
+          "type": "string"
+        }
+      ],
+      "name": "CallFailed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"authKey\",\"type\":\"address\"}],\"name\":\"AuthKeyAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"authKey\",\"type\":\"address\"}],\"name\":\"AuthKeyRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"reason\",\"type\":\"string\"}],\"name\":\"CallFailed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"}],\"name\":\"Upgraded\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"This contract holds the events used by the Authereum contracts.This abstraction exists in order to retain the order to give initialization functionsaccess to events.This contract can be overwritten with no changes to the upgradeability.\",\"methods\":{},\"title\":\"AccountEvents\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol\":\"AccountEvents\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol\":{\"keccak256\":\"0xb88871c8b07c27aec8f493de3c73d440a01e27e46eb9b85a6696ce27c50c82a5\",\"urls\":[\"bzz-raw://fb1469cc7188640ebafe5bca2318d8d8b73bd05e46956a73f171c0732fe10aac\",\"dweb:/ipfs/QmQtYPiotT3ZKAbnXTU4y4Z7KXwU9VsftkmPCfeC8dQiA4\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582031b6a554f25b27876fa552e7b5b286c4863d4ebe6be78c39130e7e160e6cd79f64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582031b6a554f25b27876fa552e7b5b286c4863d4ebe6be78c39130e7e160e6cd79f64736f6c63430005100032",
+  "sourceMap": "363:307:10:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;363:307:10;;;;;;;",
+  "deployedSourceMap": "363:307:10:-;;;;;",
+  "source": "\npragma solidity 0.5.16;\n\n/**\n * @title AccountEvents\n * @author Authereum Labs, Inc.\n * @dev This contract holds the events used by the Authereum contracts.\n * @dev This abstraction exists in order to retain the order to give initialization functions\n * @dev access to events.\n * @dev This contract can be overwritten with no changes to the upgradeability.\n */\n\ncontract AccountEvents {\n\n    /**\n     * BaseAccount.sol\n     */\n\n    event AuthKeyAdded(address indexed authKey);\n    event AuthKeyRemoved(address indexed authKey);\n    event CallFailed(string reason);\n\n    /**\n     * AccountUpgradeability.sol\n     */\n\n    event Upgraded(address indexed implementation);\n}",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol",
+    "exportedSymbols": {
+      "AccountEvents": [
+        1437
+      ]
+    },
+    "id": 1438,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1420,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1:23:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title AccountEvents\n@author Authereum Labs, Inc.\n@dev This contract holds the events used by the Authereum contracts.\n@dev This abstraction exists in order to retain the order to give initialization functions\n@dev access to events.\n@dev This contract can be overwritten with no changes to the upgradeability.",
+        "fullyImplemented": true,
+        "id": 1437,
+        "linearizedBaseContracts": [
+          1437
+        ],
+        "name": "AccountEvents",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": "BaseAccount.sol",
+            "id": 1424,
+            "name": "AuthKeyAdded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1423,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1422,
+                  "indexed": true,
+                  "name": "authKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1424,
+                  "src": "452:23:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1421,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "452:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "451:25:10"
+            },
+            "src": "433:44:10"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1428,
+            "name": "AuthKeyRemoved",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1427,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1426,
+                  "indexed": true,
+                  "name": "authKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1428,
+                  "src": "503:23:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1425,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "503:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "502:25:10"
+            },
+            "src": "482:46:10"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1432,
+            "name": "CallFailed",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1431,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1430,
+                  "indexed": false,
+                  "name": "reason",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1432,
+                  "src": "550:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1429,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:15:10"
+            },
+            "src": "533:32:10"
+          },
+          {
+            "anonymous": false,
+            "documentation": "AccountUpgradeability.sol",
+            "id": 1436,
+            "name": "Upgraded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1434,
+                  "indexed": true,
+                  "name": "implementation",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1436,
+                  "src": "636:30:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1433,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "636:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "635:32:10"
+            },
+            "src": "621:47:10"
+          }
+        ],
+        "scope": 1438,
+        "src": "363:307:10"
+      }
+    ],
+    "src": "1:669:10"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol",
+    "exportedSymbols": {
+      "AccountEvents": [
+        1437
+      ]
+    },
+    "id": 1438,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1420,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1:23:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title AccountEvents\n@author Authereum Labs, Inc.\n@dev This contract holds the events used by the Authereum contracts.\n@dev This abstraction exists in order to retain the order to give initialization functions\n@dev access to events.\n@dev This contract can be overwritten with no changes to the upgradeability.",
+        "fullyImplemented": true,
+        "id": 1437,
+        "linearizedBaseContracts": [
+          1437
+        ],
+        "name": "AccountEvents",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": "BaseAccount.sol",
+            "id": 1424,
+            "name": "AuthKeyAdded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1423,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1422,
+                  "indexed": true,
+                  "name": "authKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1424,
+                  "src": "452:23:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1421,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "452:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "451:25:10"
+            },
+            "src": "433:44:10"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1428,
+            "name": "AuthKeyRemoved",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1427,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1426,
+                  "indexed": true,
+                  "name": "authKey",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1428,
+                  "src": "503:23:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1425,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "503:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "502:25:10"
+            },
+            "src": "482:46:10"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 1432,
+            "name": "CallFailed",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1431,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1430,
+                  "indexed": false,
+                  "name": "reason",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1432,
+                  "src": "550:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1429,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:6:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:15:10"
+            },
+            "src": "533:32:10"
+          },
+          {
+            "anonymous": false,
+            "documentation": "AccountUpgradeability.sol",
+            "id": 1436,
+            "name": "Upgraded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 1435,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1434,
+                  "indexed": true,
+                  "name": "implementation",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1436,
+                  "src": "636:30:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1433,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "636:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "635:32:10"
+            },
+            "src": "621:47:10"
+          }
+        ],
+        "scope": 1438,
+        "src": "363:307:10"
+      }
+    ],
+    "src": "1:669:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:22.910Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "This contract holds the events used by the Authereum contracts.This abstraction exists in order to retain the order to give initialization functionsaccess to events.This contract can be overwritten with no changes to the upgradeability.",
+    "methods": {},
+    "title": "AccountEvents"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

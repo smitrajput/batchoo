@@ -1,0 +1,324 @@
+{
+  "contractName": "AccountInitialize",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "authKey",
+          "type": "address"
+        }
+      ],
+      "name": "AuthKeyAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "authKey",
+          "type": "address"
+        }
+      ],
+      "name": "AuthKeyRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "reason",
+          "type": "string"
+        }
+      ],
+      "name": "CallFailed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "authKeys",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_authKey",
+          "type": "address"
+        }
+      ],
+      "name": "initializeV1",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastInitializedVersion",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "numAuthKeys",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"authKey\",\"type\":\"address\"}],\"name\":\"AuthKeyAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"authKey\",\"type\":\"address\"}],\"name\":\"AuthKeyRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"reason\",\"type\":\"string\"}],\"name\":\"CallFailed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"}],\"name\":\"Upgraded\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"authKeys\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_authKey\",\"type\":\"address\"}],\"name\":\"initializeV1\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"lastInitializedVersion\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numAuthKeys\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Authereum Labs, Inc.\",\"details\":\"This contract holds the intialize functions used by the account contracts.This exists as the main contract to hold these functions. This contract is inheritedby AuthereumAccount.sol, which will not care about initialization functions as long as it inheritsAccountInitialize.sol. Any initialization function additions will be made to the variousversions of AccountInitializeVx that this contract will inherit.\",\"methods\":{\"initializeV1(address)\":{\"details\":\"Initialize the Authereum Account\",\"params\":{\"_authKey\":\"authKey that will own this account\"}}},\"title\":\"AccountInitialize\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitialize.sol\":\"AccountInitialize\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/smitrajput/Projects/batchoo/contracts/account/event/AccountEvents.sol\":{\"keccak256\":\"0xb88871c8b07c27aec8f493de3c73d440a01e27e46eb9b85a6696ce27c50c82a5\",\"urls\":[\"bzz-raw://fb1469cc7188640ebafe5bca2318d8d8b73bd05e46956a73f171c0732fe10aac\",\"dweb:/ipfs/QmQtYPiotT3ZKAbnXTU4y4Z7KXwU9VsftkmPCfeC8dQiA4\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitialize.sol\":{\"keccak256\":\"0x69573723ecdf4323c22f6c145f97810352c81b27639f86d42cf3ca0c414886f1\",\"urls\":[\"bzz-raw://8d928b7db59ad835e2e55a8adfb6b02b52b81af9ab7a5d3299a1fb8e14849955\",\"dweb:/ipfs/QmcQi3ciGDXGXTnMJyxZCjHDcRFg1u7gV7mpEpcqWTHGSM\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol\":{\"keccak256\":\"0x7f049747e85e1673a04cf037e1be96b498666c48c166eef06271ed86d9693931\",\"urls\":[\"bzz-raw://488024e7f26f01b4953f3a71b4b01534d0a063bce7b076ae93c5be63eac91e9f\",\"dweb:/ipfs/QmNa8Rwjo7bCivtAuLEU8KnHmSyTFi2sRZAqY7JGWrj1mn\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountState.sol\":{\"keccak256\":\"0x4ca8d2bc1ad7812ed5888c4e1360eb2149da0e78f198bcd9fc9705f78cbe603d\",\"urls\":[\"bzz-raw://45bdb52eb3b30d1b426e9b2b5f5e3da649639ce11ea7e38db6ae4be960377822\",\"dweb:/ipfs/Qma65bYE7ZA7K5XQduyriSwP9ojNjBnYXg74HBMsc3XmVt\"]},\"/Users/smitrajput/Projects/batchoo/contracts/account/state/AccountStateV1.sol\":{\"keccak256\":\"0xcfb4767ffef498abc93d41400207c2ffcaec8c6aee6098da9cd4efa0386911c4\",\"urls\":[\"bzz-raw://74aa89ee35c7fad5569ce484c309e53fec22f3fb3bffb0365332d597ef043b57\",\"dweb:/ipfs/QmYMNQtds3mhuSX4erkSHasz8dDtP8PtrS1P7wBQbU8on7\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102ee806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80631b9a9f9e1461005c5780635175ca5e146100a05780637e7fd66c146100fc578063affed0e01461011a578063ec5e319e14610138575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610156565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610266565b604051808215151515815260200191505060405180910390f35b610104610286565b6040518082815260200191505060405180910390f35b61012261028c565b6040518082815260200191505060405180910390f35b610140610292565b6040518082815260200191505060405180910390f35b60008054146101b0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806102996021913960400191505060405180910390fd5b600160008190555060018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555060016003600082825401925050819055508073ffffffffffffffffffffffffffffffffffffffff167fb020719d16d3c4de45a91f9c329aa61d5bad3f44f760840c8d5d82d4cd3bcc3360405160405180910390a250565b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fe41493a20496d70726f70657220696e697469616c697a6174696f6e206f72646572a265627a7a723158206b48485fbe627f236a82304b869aa6ee4f40115352bca81ee6281b598be4566364736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80631b9a9f9e1461005c5780635175ca5e146100a05780637e7fd66c146100fc578063affed0e01461011a578063ec5e319e14610138575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610156565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610266565b604051808215151515815260200191505060405180910390f35b610104610286565b6040518082815260200191505060405180910390f35b61012261028c565b6040518082815260200191505060405180910390f35b610140610292565b6040518082815260200191505060405180910390f35b60008054146101b0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806102996021913960400191505060405180910390fd5b600160008190555060018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555060016003600082825401925050819055508073ffffffffffffffffffffffffffffffffffffffff167fb020719d16d3c4de45a91f9c329aa61d5bad3f44f760840c8d5d82d4cd3bcc3360405160405180910390a250565b60016020528060005260406000206000915054906101000a900460ff1681565b60005481565b60025481565b6003548156fe41493a20496d70726f70657220696e697469616c697a6174696f6e206f72646572a265627a7a723158206b48485fbe627f236a82304b869aa6ee4f40115352bca81ee6281b598be4566364736f6c63430005100032",
+  "sourceMap": "584:52:11:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;584:52:11;;;;;;;",
+  "deployedSourceMap": "584:52:11:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;584:52:11;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;519:327:12;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;519:327:12;;;;;;;;;;;;;;;;;;;:::i;:::-;;328:40:14;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;328:40:14;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;285:37;;;:::i;:::-;;;;;;;;;;;;;;;;;;;374:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;400:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;519:327:12;636:1;610:22;;:27;602:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;710:1;685:22;:26;;;;772:4;751:8;:18;760:8;751:18;;;;;;;;;;;;;;;;:25;;;;;;;;;;;;;;;;;;801:1;786:11;;:16;;;;;;;;;;;830:8;817:22;;;;;;;;;;;;519:327;:::o;328:40:14:-;;;;;;;;;;;;;;;;;;;;;;:::o;285:37::-;;;;:::o;374:20::-;;;;:::o;400:26::-;;;;:::o",
+  "source": "pragma solidity 0.5.16;\n\nimport \"./AccountInitializeV1.sol\";\n\n/**\n * @title AccountInitialize\n * @author Authereum Labs, Inc.\n * @dev This contract holds the intialize functions used by the account contracts.\n * @dev This exists as the main contract to hold these functions. This contract is inherited\n * @dev by AuthereumAccount.sol, which will not care about initialization functions as long as it inherits\n * @dev AccountInitialize.sol. Any initialization function additions will be made to the various\n * @dev versions of AccountInitializeVx that this contract will inherit.\n */\n\ncontract AccountInitialize is AccountInitializeV1 {}",
+  "sourcePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitialize.sol",
+  "ast": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitialize.sol",
+    "exportedSymbols": {
+      "AccountInitialize": [
+        1443
+      ]
+    },
+    "id": 1444,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1439,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:11"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol",
+        "file": "./AccountInitializeV1.sol",
+        "id": 1440,
+        "nodeType": "ImportDirective",
+        "scope": 1444,
+        "sourceUnit": 1484,
+        "src": "25:35:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1441,
+              "name": "AccountInitializeV1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1483,
+              "src": "614:19:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountInitializeV1_$1483",
+                "typeString": "contract AccountInitializeV1"
+              }
+            },
+            "id": 1442,
+            "nodeType": "InheritanceSpecifier",
+            "src": "614:19:11"
+          }
+        ],
+        "contractDependencies": [
+          1437,
+          1483,
+          1489,
+          1502
+        ],
+        "contractKind": "contract",
+        "documentation": "@title AccountInitialize\n@author Authereum Labs, Inc.\n@dev This contract holds the intialize functions used by the account contracts.\n@dev This exists as the main contract to hold these functions. This contract is inherited\n@dev by AuthereumAccount.sol, which will not care about initialization functions as long as it inherits\n@dev AccountInitialize.sol. Any initialization function additions will be made to the various\n@dev versions of AccountInitializeVx that this contract will inherit.",
+        "fullyImplemented": true,
+        "id": 1443,
+        "linearizedBaseContracts": [
+          1443,
+          1483,
+          1437,
+          1489,
+          1502
+        ],
+        "name": "AccountInitialize",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1444,
+        "src": "584:52:11"
+      }
+    ],
+    "src": "0:636:11"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitialize.sol",
+    "exportedSymbols": {
+      "AccountInitialize": [
+        1443
+      ]
+    },
+    "id": 1444,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1439,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:11"
+      },
+      {
+        "absolutePath": "/Users/smitrajput/Projects/batchoo/contracts/account/initializer/AccountInitializeV1.sol",
+        "file": "./AccountInitializeV1.sol",
+        "id": 1440,
+        "nodeType": "ImportDirective",
+        "scope": 1444,
+        "sourceUnit": 1484,
+        "src": "25:35:11",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1441,
+              "name": "AccountInitializeV1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1483,
+              "src": "614:19:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AccountInitializeV1_$1483",
+                "typeString": "contract AccountInitializeV1"
+              }
+            },
+            "id": 1442,
+            "nodeType": "InheritanceSpecifier",
+            "src": "614:19:11"
+          }
+        ],
+        "contractDependencies": [
+          1437,
+          1483,
+          1489,
+          1502
+        ],
+        "contractKind": "contract",
+        "documentation": "@title AccountInitialize\n@author Authereum Labs, Inc.\n@dev This contract holds the intialize functions used by the account contracts.\n@dev This exists as the main contract to hold these functions. This contract is inherited\n@dev by AuthereumAccount.sol, which will not care about initialization functions as long as it inherits\n@dev AccountInitialize.sol. Any initialization function additions will be made to the various\n@dev versions of AccountInitializeVx that this contract will inherit.",
+        "fullyImplemented": true,
+        "id": 1443,
+        "linearizedBaseContracts": [
+          1443,
+          1483,
+          1437,
+          1489,
+          1502
+        ],
+        "name": "AccountInitialize",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1444,
+        "src": "584:52:11"
+      }
+    ],
+    "src": "0:636:11"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-20T12:48:22.911Z",
+  "devdoc": {
+    "author": "Authereum Labs, Inc.",
+    "details": "This contract holds the intialize functions used by the account contracts.This exists as the main contract to hold these functions. This contract is inheritedby AuthereumAccount.sol, which will not care about initialization functions as long as it inheritsAccountInitialize.sol. Any initialization function additions will be made to the variousversions of AccountInitializeVx that this contract will inherit.",
+    "methods": {
+      "initializeV1(address)": {
+        "details": "Initialize the Authereum Account",
+        "params": {
+          "_authKey": "authKey that will own this account"
+        }
+      }
+    },
+    "title": "AccountInitialize"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
